@@ -1,0 +1,24 @@
+name: pythonMongo
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - ca-certificates=2019.6.16=hecc5488_0
+  - certifi=2019.6.16=py37_0
+  - colorama=0.4.1=py_0
+  - mongoengine=0.18.2=py37_0
+  - openssl=1.1.1b=hfa6e2cd_2
+  - pip=19.1.1=py37_0
+  - pymongo=3.8.0=py37h6538335_0
+  - python=3.7.3=h510b542_1
+  - python-dateutil=2.8.0=py_0
+  - setuptools=41.0.1=py37_0
+  - six=1.12.0=py37_1000
+  - sqlite=3.28.0=hfa6e2cd_1
+  - tqdm=4.32.2=py_0
+  - vc=14.1=h0510ff6_4
+  - vs2015_runtime=14.15.26706=h3a45250_4
+  - wheel=0.33.4=py37_0
+  - wincertstore=0.2=py37_1002
+prefix: C:\Users\Eric\Anaconda3\envs\pythonMongo
+
