@@ -17,11 +17,10 @@ def create_account(name: str, email: str) -> Owner:
 
     return owner
 
-
 def find_account_by_email(email: str) -> Owner:
     owner = Owner.objects(email=email).first()
+    
     return owner
-
 
 def register_cage(active_account: Owner,
                   name, allow_dangerous, has_toys,

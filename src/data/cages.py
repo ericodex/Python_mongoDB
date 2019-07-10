@@ -1,6 +1,5 @@
 import datetime # Date time, otimização do uso de unidade de tempo no banco de dados.
 import mongoengine as me
-
 from data.bookings import Booking
 
 class Cage(me.Document): 

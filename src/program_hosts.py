@@ -1,16 +1,14 @@
 import datetime
-from colorama import Fore
+from colorama import Fore, init
 from dateutil import parser
 
 from infrastructure.switchlang import switch
 import infrastructure.state as state
 import services.data_service as svc
 
-
 def run():
     print(' ****************** Welcome host **************** ')
     print()
-
     show_commands()
 
     while True:
@@ -189,25 +187,20 @@ def view_bookings():
             b.duration_in_days
         ))
 
-
 def exit_app():
     print()
     print('bye')
     raise KeyboardInterrupt()
 
-
 def get_action():
     text = '> '
     if state.active_account:
         text = f'{state.active_account.name}> '
-
-    action = input(Fore.YELLOW + text + Fore.WHITE)
+    action = input(init(print(Fore.YELLOW + text + Fore.WHITE)))
     return action.strip().lower()
-
 
 def unknown_command():
     print("Sorry we didn't understand that command.")
-
 
 def success_msg(text):
     print(Fore.LIGHTGREEN_EX + text + Fore.WHITE)

@@ -7,11 +7,9 @@ import services.data_service as svc
 from program_hosts import success_msg, error_msg
 import infrastructure.state as state
 
-
 def run():
     print(' ****************** Welcome guest **************** ')
     print()
-
     show_commands()
 
     while True:
