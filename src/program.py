@@ -42,15 +42,15 @@ OI??????????I$$M=,:+7??I$7I???????????
     print(Fore.GREEN + snake)
     print(Fore.WHITE + '*********************************************')
     print()
-    print("Welcome to Snake BnB!")
-    print("Why are you here?")
+    print("Bem vindo ao BnB para serpentes!")
+    print("O que você deseja?")
     print()
 
 def find_user_intent():
-    print("[g] Book a cage for your snake")
-    print("[h] Offer extra cage space")
+    print("[H] Reservar um serpentário.") # Hóspede
+    print("[A] Oferecer local para serpentes.") # Anfitrião
     print()
-    choice = input("Are you a [g]uest or [h]ost? ")
+    choice = input("Você é um [H]óspede [A]nfitrião? ")
     if choice == 'h':
         return 'offer'
     return 'book'
